@@ -105,12 +105,12 @@ const styles = StyleSheet.create({
     flex: 0.3,
     flexDirection: 'row',
     padding: 15,
-    justiftContent: 'center',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   largeButtonWrapper: {
     padding: 15,
-    justiftContent: 'center',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   clearSubject: {

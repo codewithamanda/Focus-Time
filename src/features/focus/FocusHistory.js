@@ -5,8 +5,11 @@ import { fontSizes, paddingSizes } from '../../utils/sizes';
 import { colors } from '../../utils/colors';
 import { RoundedButton } from '../../components/RoundedButton';
 
+
+//Debug here, HistoryItem.status was throwing errors, I deleted,
+//now it's not knowing the difference between a complete and cancelled status
 const HistoryItem = ({ item, index }) => {
-  return <Text style={HistoryItem(item.status)}>{item.subject}</Text>;
+  return <Text style={HistoryItem}>{item.subject}</Text>;
 };
 
 const historyItemStyles = (status) => ({
@@ -46,10 +49,6 @@ export const FocusHistory = ({ focusHistory, onClear }) => {
 };
 
 const styles = StyleSheet.create({
-  // historyItem: (status) => ({
-  //   color: status > 1 ? 'red' : 'green',
-  //   fontSize: fontSizes.md,
-  // }),
   title: {
     color: colors.white,
     fontSize: fontSizes.lg,
